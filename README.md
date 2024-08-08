@@ -4,7 +4,7 @@ A minimalistic interface that copies any text to the user's clipboard using URL 
 
 ## How to use
 
-Add the text you want the user to copy in query params with the key "text" (make sure to encodeURIComponent your text before). Example:
+Add the text you want the user to copy in query params with the key "text" (make sure to `encodeURIComponent` your text before). Example:
 
 With the [official instance of the website](https://text2clipboard.netlify.app/) hosted on netlify:
 
