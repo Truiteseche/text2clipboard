@@ -1,0 +1,70 @@
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: system-ui, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ff6300;
+    box-sizing: border-box;
+    background-color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+h2 {
+    display: none;
+    margin: 0 auto;
+    color: #9f9f9f;
+}
+
+body:not(.success, .failure, .no-text, .button) .copying {
+    display: block;
+}
+
+body.success .success {
+    display: block;
+}
+
+body.failure .failure {
+    display: block;
+}
+
+body.no-text .no-text {
+    display: block;
+}
+
+button {
+    font-family: system-ui, 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: none;
+    appearance: none;
+    background: none;
+    background-color: transparent;
+    color: #9f9f9f;
+    border: 2px solid #9f9f9f;
+    padding: 10px 15px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .1s;
+}
+
+button:is(:hover, :focus-visible) {
+    color: #1a1a1a;
+    background-color: #9f9f9f;
+}
+button:active {
+    opacity: .7;
+}
+
+body.button button {
+    display: block;
+}
